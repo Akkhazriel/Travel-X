@@ -15,22 +15,32 @@
         -webkit-text-fill-color: transparent;
     }
 
+    @mixin background-size {
+        background-position: center center;
+        background-color: #555;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     &--norway {
         background: var(--radiel-gradient),
         var(--linear-gridient),
         url('./../img/slider-bg/01.jpg');
+        @include background-size;
     }
 
     &--austria {
         background: var(--radiel-gradient),
         var(--linear-gridient),
         url('./../img/slider-bg/02.jpg');
+        @include background-size;
     }
 
     &--uae {
         background: var(--radiel-gradient),
         var(--linear-gridient),
         url('./../img/slider-bg/03.jpg');
+        @include background-size;
     }
 
 
@@ -38,12 +48,14 @@
         background: var(--radiel-gradient),
         var(--linear-gridient),
         url('./../img/slider-bg/04.jpg');
+        @include background-size;
     }
 
     &--morocco {
         background: var(--radiel-gradient),
         var(--linear-gridient),
         url('./../img/slider-bg/05.jpg');
+        @include background-size;
     }
 
     color: #FFF;

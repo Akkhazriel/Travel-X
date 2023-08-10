@@ -3,6 +3,9 @@ import Swiper from 'swiper/bundle';
 // import styles bundle
 import 'swiper/css/bundle';
 
+import mobileNav from './modules/mobile-nav.js';
+import loader from './modules/loader.js';
+
 // init Swiper:
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -32,3 +35,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+mobileNav();
+loader();

@@ -1,0 +1,39 @@
+.slider-controls {
+    display: grid;
+    gap: 15px;
+    // .slider-controls__arrows
+
+    &__arrows {
+        display: flex;
+        column-gap: 5px;
+        opacity: .5;
+    }
+
+    // .slider-controls__count
+
+    &__count {
+        display: flex;
+        column-gap: 6px;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        color: rgba(255, 255, 255, .3);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+        text-align: right;
+    }
+
+    // .slider-controls__count-current
+
+    &__count-current, &.swiper-pagination-current {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    // .slider-controls__slider-total
+
+    &__slider-total {
+    }
+}

@@ -1,0 +1,98 @@
+.header {
+    height: 100vh;
+    position: relative;
+    background-color: #c4c4c4;
+    color: #FFF;
+    // .header__content
+
+    a {
+        color: #FFF;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 9;
+        // Отступы формального контейнера от края страницы для пк
+        top: 50px;
+        left: 70px;
+        right: 70px;
+        bottom: 80px;
+
+        pointer-events: none;
+
+        // Для маленького ноутбука
+        @media (max-width: 1200px) {
+            top: 40px;
+            left: 40px;
+            right: 40px;
+            bottom: 60px;
+        }
+
+        // Для смартфонов и планшетов
+        @media (max-width: 767px) {
+            top: 30px;
+            left: 5%;
+            right: 5%;
+            bottom: 30px;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+        pointer-events: all;
+    }
+
+    // .header__socials
+
+    &__socials {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        pointer-events: all;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        @media (max-height: 600px) {
+            top: 40%;
+        }
+    }
+
+    // .header__see-more
+
+    &__see-more {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: all;
+
+
+    }
+
+    // .header__slider-controls
+
+    &__slider-controls {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        pointer-events: all;
+    }
+
+    // .header__scrollbar
+
+    &__scrollbar {
+        position: absolute;
+        pointer-events: all;
+        right: 0;
+        top: 45%;
+
+        width: 400px;
+        height: 10px;
+        transform: rotate(90deg) translate(50%, 0);
+        transform-origin: right top;
+    }
+}
